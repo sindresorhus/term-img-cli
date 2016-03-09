@@ -1,6 +1,6 @@
 {
   "name": "term-img-cli",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Display images in your terminal",
   "license": "MIT",
   "repository": "sindresorhus/term-img-cli",
