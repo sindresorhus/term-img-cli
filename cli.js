@@ -21,7 +21,16 @@ const cli = meow(`
 const input = cli.input[0];
 
 function init(data) {
-	termImg(data, cli.flags);
+	try {
+		termImg(data, cli.flags);
+	} catch (err) {
+		if (err.name === 'UnsupportedTerminal') {
+			console.error(err.message);
+			process.exit(1);
+		} else {
+			throw err;
+		}
+	}
 }
 
 if (!input && process.stdin.isTTY) {
