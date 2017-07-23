@@ -7,6 +7,6 @@ test(async t => {
 		return;
 	}
 
-	const stdout = (await execa('./cli.js', ['fixture.jpg'])).stdout;
-	t.true(stdout.indexOf('\u001b]1337;File=inline=1:') !== -1);
+	const {stdout} = await execa('./cli.js', ['fixture.jpg']);
+	t.true(stdout.includes('\u001B]1337;File=inline=1:'));
 });

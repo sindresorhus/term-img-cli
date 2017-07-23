@@ -1,50 +1,50 @@
 {
-  "name": "term-img-cli",
-  "version": "1.2.0",
-  "description": "Display images in your terminal",
-  "license": "MIT",
-  "repository": "sindresorhus/term-img-cli",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "bin": {
-    "term-img": "cli.js"
-  },
-  "engines": {
-    "node": ">=4"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "files": [
-    "cli.js"
-  ],
-  "keywords": [
-    "cli-app",
-    "cli",
-    "term",
-    "image",
-    "iterm",
-    "iterm2",
-    "terminal",
-    "img",
-    "app",
-    "version",
-    "ansi",
-    "escape",
-    "gif",
-    "gifs"
-  ],
-  "dependencies": {
-    "get-stdin": "^5.0.1",
-    "meow": "^3.7.0",
-    "term-img": "^1.0.0"
-  },
-  "devDependencies": {
-    "ava": "*",
-    "execa": "^0.6.0",
-    "xo": "*"
-  }
+	"name": "term-img-cli",
+	"version": "1.2.0",
+	"description": "Display images in your terminal",
+	"license": "MIT",
+	"repository": "sindresorhus/term-img-cli",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"bin": {
+		"term-img": "cli.js"
+	},
+	"engines": {
+		"node": ">=4"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"cli.js"
+	],
+	"keywords": [
+		"cli-app",
+		"cli",
+		"term",
+		"image",
+		"iterm",
+		"iterm2",
+		"terminal",
+		"img",
+		"app",
+		"version",
+		"ansi",
+		"escape",
+		"gif",
+		"gifs"
+	],
+	"dependencies": {
+		"get-stdin": "^5.0.1",
+		"meow": "^3.7.0",
+		"term-img": "^2.0.0"
+	},
+	"devDependencies": {
+		"ava": "*",
+		"execa": "^0.7.0",
+		"xo": "*"
+	}
 }

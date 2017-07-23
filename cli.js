@@ -24,7 +24,7 @@ function init(data) {
 	try {
 		termImg(data, cli.flags);
 	} catch (err) {
-		if (err.name === 'UnsupportedTerminal') {
+		if (err.name === 'UnsupportedTerminalError') {
 			console.error(err.message);
 			process.exit(1);
 		} else {
