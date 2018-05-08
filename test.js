@@ -1,7 +1,7 @@
 import test from 'ava';
 import execa from 'execa';
 
-test(async t => {
+test('main', async t => {
 	if (process.env.TERM_PROGRAM !== 'iTerm.app') {
 		t.pass();
 		return;

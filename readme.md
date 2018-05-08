@@ -1,6 +1,6 @@
 # term-img-cli [![Build Status](https://travis-ci.org/sindresorhus/term-img-cli.svg?branch=master)](https://travis-ci.org/sindresorhus/term-img-cli)
 
-> Display images in your terminal
+> Display images in iTerm
 
 ![](screenshot.jpg)
 
@@ -36,6 +36,7 @@ $ term-img --help
 ## Related
 
 - [term-img](https://github.com/sindresorhus/term-img) - API for this module
+- [terminal-image-cli](https://github.com/sindresorhus/terminal-image-cli) - Like this module but works in any terminal
 
 
 ## License

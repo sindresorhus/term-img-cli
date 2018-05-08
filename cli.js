@@ -16,9 +16,18 @@ const cli = meow(`
 	Examples
 	  $ term-img unicorn.jpg --width=200px
 	  $ cat unicorn.jpg | term-img --height=50%
-`);
+`, {
+	flags: {
+		width: {
+			type: 'string'
+		},
+		height: {
+			type: 'string'
+		}
+	}
+});
 
-const input = cli.input[0];
+const [input] = cli.input;
 
 function init(data) {
 	try {
@@ -34,12 +43,10 @@ function init(data) {
 }
 
 if (!input && process.stdin.isTTY) {
-	console.error('Specify an image');
+	console.error('Specify the path to an image');
 	process.exit(1);
 }
 
-if (input) {
-	init(input);
-} else {
-	getStdin.buffer().then(init);
-}
+(async () => {
+	init(input ? input : await getStdin.buffer());
+})();
