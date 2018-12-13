@@ -32,12 +32,12 @@ const [input] = cli.input;
 function init(data) {
 	try {
 		termImg(data, cli.flags);
-	} catch (err) {
-		if (err.name === 'UnsupportedTerminalError') {
-			console.error(err.message);
+	} catch (error) {
+		if (error.name === 'UnsupportedTerminalError') {
+			console.error(error.message);
 			process.exit(1);
 		} else {
-			throw err;
+			throw error;
 		}
 	}
 }
