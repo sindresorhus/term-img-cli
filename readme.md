@@ -1,4 +1,4 @@
-# term-img-cli [![Build Status](https://travis-ci.org/sindresorhus/term-img-cli.svg?branch=master)](https://travis-ci.org/sindresorhus/term-img-cli)
+# term-img-cli
 
 > Display images in iTerm
 
