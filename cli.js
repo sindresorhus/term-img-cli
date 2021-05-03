@@ -1,8 +1,7 @@
 #!/usr/bin/env node
-'use strict';
-const meow = require('meow');
-const getStdin = require('get-stdin');
-const termImg = require('term-img');
+import meow from 'meow';
+import getStdin from 'get-stdin';
+import terminalImage from 'term-img';
 
 const cli = meow(`
 	Usage
@@ -31,7 +30,7 @@ const [input] = cli.input;
 
 function init(data) {
 	try {
-		termImg(data, cli.flags);
+		console.log(terminalImage(data, cli.flags));
 	} catch (error) {
 		if (error.name === 'UnsupportedTerminalError') {
 			console.error(error.message);

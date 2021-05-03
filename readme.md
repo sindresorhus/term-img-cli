@@ -6,13 +6,11 @@
 
 *Currently only supported on [iTerm >=3](https://www.iterm2.com/downloads.html).*
 
-
 ## Install
 
 ```
 $ npm install --global term-img-cli
 ```
-
 
 ## Usage
 
@@ -32,13 +30,7 @@ $ term-img --help
     $ cat unicorn.jpg | term-img --height=50%
 ```
 
-
 ## Related
 
 - [term-img](https://github.com/sindresorhus/term-img) - API for this module
 - [terminal-image-cli](https://github.com/sindresorhus/terminal-image-cli) - Like this module but works in any terminal
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)
