@@ -8,8 +8,8 @@
 
 ## Install
 
-```
-$ npm install --global term-img-cli
+```sh
+npm install --global term-img-cli
 ```
 
 ## Usage
@@ -32,5 +32,5 @@ $ term-img --help
 
 ## Related
 
-- [term-img](https://github.com/sindresorhus/term-img) - API for this module
+- [term-img](https://github.com/sindresorhus/term-img) - API for this package
 - [terminal-image-cli](https://github.com/sindresorhus/terminal-image-cli) - Like this module but works in any terminal

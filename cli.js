@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import process from 'node:process';
 import meow from 'meow';
 import getStdin from 'get-stdin';
 import terminalImage from 'term-img';
@@ -16,14 +17,15 @@ const cli = meow(`
 	  $ term-img unicorn.jpg --width=200px
 	  $ cat unicorn.jpg | term-img --height=50%
 `, {
+	importMeta: import.meta,
 	flags: {
 		width: {
-			type: 'string'
+			type: 'string',
 		},
 		height: {
-			type: 'string'
-		}
-	}
+			type: 'string',
+		},
+	},
 });
 
 const [input] = cli.input;
@@ -46,6 +48,4 @@ if (!input && process.stdin.isTTY) {
 	process.exit(1);
 }
 
-(async () => {
-	init(input ? input : await getStdin.buffer());
-})();
+init(input ?? await getStdin.buffer());

@@ -1,5 +1,6 @@
+import process from 'node:process';
 import test from 'ava';
-import execa from 'execa';
+import {execa} from 'execa';
 
 test('main', async t => {
 	if (process.env.TERM_PROGRAM !== 'iTerm.app') {
